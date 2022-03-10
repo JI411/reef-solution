@@ -123,8 +123,7 @@ class F2:
             calculate_score(self._pred_bboxes_list, self._gt_bboxes_list, iou_th)
             for iou_th in iou_ths
         ]
-        score = np.mean(scores)
-        return score
+        return np.mean(scores)
 
 
 def save_one_txt(predn, save_conf, shape, file):
